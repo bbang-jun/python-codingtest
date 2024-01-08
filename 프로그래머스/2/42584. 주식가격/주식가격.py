@@ -4,14 +4,14 @@ def solution(prices) :
     answer = []
     prices = deque(prices)
     while prices :
-        cnt = 0
+        count = 0
         price = prices.popleft()
 
-        for i in prices :
-            cnt += 1
-            if price > i :
+        for i in prices:
+            count+=1
+            if price > i:
                 break
 
-        answer.append(cnt)
+        answer.append(count)
 
     return answer
